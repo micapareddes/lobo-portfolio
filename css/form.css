@@ -1,0 +1,147 @@
+.formacao {
+  background-color: #141414;
+  position: relative;
+}
+
+.formacao .titulo {
+  color: #000;
+}
+
+.formacao .texto {
+  color: #a3a3a3;
+}
+
+.formacao .texto strong {
+  color: #fff;
+}
+
+.form--escrita {
+  display: grid;
+  gap: 50px;
+}
+
+.cursos {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.curso {
+  flex: 1;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.curso--grado {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+}
+
+.curso--titulo {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  position: relative;
+  flex: 1;
+}
+
+.curso--titulo::before {
+  content: "";
+  height: 20px;
+  width: 4px;
+  background: linear-gradient(#b629f8, #800add);
+  display: block;
+  position: absolute;
+  left: -24px;
+}
+
+.curso--facul {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+}
+
+.extra {
+  color: #fff;
+}
+
+.extra h4 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.extra h4::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  left: -36px;
+  top: -4px;
+}
+
+.extra li{
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.extra span{
+  color: #8f8f8f;
+}
+
+.intensivo {
+  margin-bottom: 60px;
+}
+
+.intensivo h4::before {
+  background: url(../files/cursos.svg) no-repeat center;
+}
+
+.intensivo li{
+  display: flex;
+  justify-content: space-between;
+}
+
+.idiomas h4::before {
+  background: url(../files/idiomas.svg) no-repeat center;
+}
+
+.formacao::after{
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(../files/deco.svg) no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}
+
+@media(max-width: 800px){
+  .formacao .titulo{
+    color: #fff;
+  }
+
+  .formacao .texto{
+    margin-bottom: 0;
+  }
+
+  .form--escrita{
+    gap: 40px;
+  }
+
+.extra h4::before {
+  position: initial;
+  margin-bottom: 10px;
+}
+}

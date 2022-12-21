@@ -1,0 +1,59 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  margin: 0 auto;
+  font-family: 'Fira Sans', sans-serif;
+  color: #141414;
+}
+
+h1,
+h2,
+h3,
+.empresa--titulo{
+  font-family: Playfair Display;
+  font-weight: 700;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px; 
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 80px 30px;
+  gap: 8rem;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.titulo{
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 5ch; 
+}
+
+@media(max-width: 800px){
+  .experiencia, .formacao .container{
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 30px 20px;
+  }
+
+  .titulo{
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+
+}
